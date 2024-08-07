@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concours ENSA 2024</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="https://montadanet.com/wp-content/uploads/2022/07/ensa-logo-color.png" alt="ENSA Logo" id="logo">
+        <h1 id="title">CONCOURS ENSA 2024</h1>
+    </header>
+
+    <main>
+        <div id="main-content">
+            <button id="ensa-btn">ENSA</button>
+            <div id="options" class="hidden">
+                <button class="option-btn" data-type="maths">MATHS</button>
+                <button class="option-btn" data-type="pc">PC</button>
+            </div>
+        </div>
+        
+        <div id="quiz-container" class="hidden">
+            <div id="image-container"></div>
+            <form id="quiz-form">
+                <!-- Questions will be dynamically added here -->
+                <button type="submit" id="submit-btn">Submit</button>
+            </form>
+            <div id="score" class="hidden"></div>
+            <div id="timer">Time remaining: <span id="timer-count">90:00</span></div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
